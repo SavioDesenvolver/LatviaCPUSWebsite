@@ -225,7 +225,7 @@ async def create_daily_cpu(ctx: SlashContext, **kwargs):
     </html>
     """
 
-    
+    # Write the content to the index.html file
     with open(f"{os.path.join(path, folder_name)}/index.html", "w") as file:
         file.write(html_content)
 
@@ -251,4 +251,4 @@ async def create_daily_cpu(ctx: SlashContext, **kwargs):
 
     await ctx.send(embed=embed)
 
-bot.run("botoken")
+bot.run("bottoken")
